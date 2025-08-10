@@ -36,7 +36,11 @@ const Task = ({ tasks, tasksData: boardId }: TaskProps) => {
       <CardHeader>
         <div className="flex flex-row justify-between">
           <CardTitle className="font-serif text-xl font-semibold text-gray-800">
-            {task?.name} Tasks
+            
+            {
+              //@ts-ignore
+            task?.name
+            } Tasks
           </CardTitle>
           <CreateTaskForm handleTaskForm={handleTaskForm} />
         </div>
