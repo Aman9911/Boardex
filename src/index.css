@@ -1,0 +1,10 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+body {
+  @apply bg-[#F5F7FA];
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
