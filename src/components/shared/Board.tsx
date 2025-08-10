@@ -23,8 +23,10 @@ const Board = ({ boards }: BoardProps) => {
   );
 
   const handleDeleteBoard =  useCallback((boardId: string) => {
-      deleteBoard.mutate(boardId); 
-      window.location.reload();
+      deleteBoard.mutate(boardId);
+      setTimeout(()=>{
+        window.location.reload();
+      },500)
   },[deleteBoard])
 
   return (
